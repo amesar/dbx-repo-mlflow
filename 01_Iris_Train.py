@@ -1,6 +1,7 @@
 # Databricks notebook source
 # MAGIC %md ## Iris Train - Git Repos example
-# MAGIC * Train and register a model.
+# MAGIC * Test Databricks Git Repos notebooks and MLflow interaction
+# MAGIC * Simple rain and register a model.
 
 # COMMAND ----------
 
