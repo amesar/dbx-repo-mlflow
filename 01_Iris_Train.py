@@ -18,6 +18,7 @@ print("registered_model:",registered_model)
 # COMMAND ----------
 
 if experiment:
+    import mlflow
     mlflow.set_experiment(experiment)
 
 # COMMAND ----------
