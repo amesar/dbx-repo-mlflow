@@ -5,10 +5,20 @@
 
 # COMMAND ----------
 
+dbutils.widgets.text("Experiment", "")
+experiment = dbutils.widgets.get("Experiment")
+if experiment == "": experiment = None 
+print("experiment:",experiment)
+
 dbutils.widgets.text("Registered model", "")
 registered_model = dbutils.widgets.get("Registered model")
 if registered_model == "": registered_model = None 
 print("registered_model:",registered_model)
+
+# COMMAND ----------
+
+if experiment:
+    mlflow.set_experiment(experiment)
 
 # COMMAND ----------
 
